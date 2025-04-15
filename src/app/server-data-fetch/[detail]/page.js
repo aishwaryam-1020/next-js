@@ -15,7 +15,7 @@ export default async function UserDetails({ params }) {
     const userDetails = await fetchUserDetails(params.detail); // ✅ FIXED
 
     return (
-        <div className="p-10">
+        <div className="p-12">
             <h1>User details page: User List Page</h1>
             <p>{userDetails?.firstName} {userDetails?.lastName}</p>
             <p>{userDetails?.age}</p>
